@@ -1,0 +1,10 @@
+docker:
+  swarm:
+    managers:
+    - c71
+    workers:
+    - c72
+    - c73
+  registries:
+  - host: c73
+    port: 80

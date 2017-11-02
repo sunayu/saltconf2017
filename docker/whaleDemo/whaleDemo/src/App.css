@@ -1,0 +1,182 @@
+* {
+*   -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+}
+div.App {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: #21baf7;
+  overflow: hidden;
+}
+
+.whale {
+  position: absolute;
+  height: 150px;
+  width: 250px;
+  left: 47%;
+  top: 0;
+  z-index: 11;
+}
+
+.bubble {
+  position: absolute;
+}
+
+.seaweed {
+  position: absolute;
+  height: 200px;
+  width: 180px;
+  /* background: green; */
+}
+
+.wave {
+  top: 200px;
+  position: absolute;
+  height: 200px;
+  background: #21baf7;
+}
+
+.wavelet {
+  position: absolute;
+  top: -25px;
+  height: 40px;
+  background: linear-gradient(#21e1f7, #21baf7);
+  border-radius: 50% 50% 0 0;
+  z-index: 1;
+}
+
+.circles {
+  border-radius: 50%;
+  top: -35px;
+  height: 24px;
+  width: 64px;
+  position: absolute;
+  z-index: 2;
+  background: #21baf7;
+}
+
+.sand-transition {
+  position: absolute;
+  top: 300px;
+  height: 200px;
+  background: linear-gradient(#21baf7, lemonchiffon);
+  z-index: 5;
+}
+
+.sand {
+  position: absolute;
+  top: 400px;
+  height: 1000px;
+  background: lemonchiffon;
+  z-index: 5;
+}
+
+.controller {
+  border: 6px solid #11aae7;
+  background: #31caff;
+  padding: 10px 20px 17px 15px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 10000;
+}
+
+.controller header {
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+  font-family: 'Hammersmith One', sans-serif;
+  color: lemonchiffon;
+  border-bottom: 1px solid lemonchiffon;
+}
+
+.inputField {
+  font-family: 'Hammersmith One', sans-serif;
+  text-align: right;
+}
+
+.inputField span {
+  color: lemonchiffon;
+  margin-right: 10px;
+}
+
+input{
+  color: #fcfcfc;
+  border: 2px solid #11aae7;
+  border-radius: 5px;
+  font-family: 'Hammersmith One', sans-serif;
+  width: 50px;
+  height: 30px;
+  font-size: 22px;
+  background: #21e1f7;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+div.button {
+  /* position: absolute; */
+  color: lemonChiffon;
+  background-color: #21e1f7;
+  text-align: center;
+  border-radius: 7px;
+  border-bottom: 3px solid #00b1c7;
+}
+
+div.button.thrust {
+  /* position: absolute; */
+  bottom: 15px;
+  margin-top: 7px;
+}
+
+
+
+div.button:active {
+  transform: translate(0px, 3px);
+  margin-top: 2px;
+  border-bottom: 1px solid #00b1c7;
+}
+
+div.button.thrust:active {
+  /* position: absolute; */
+  bottom: 15px;
+  margin-top: 9px;
+}
+div.usageStats {
+  border: 6px solid #11aae7;
+  background: #31caff;
+  padding: 10px 20px 17px 15px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: lemonchiffon;
+  z-index: 10000;
+}
+
+div.stat{
+  display: flex;
+  flex-direction: column;
+}
+
+div.stat header{
+  border-bottom: 1px solid lemonchiffon;
+  padding: 0px 0px 2px 0px;
+  width: 20%;
+  margin: auto;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+div.indstat{
+  display: flex;
+  justify-content: flex-end;
+}
+
+span.percentage {
+  width: 20%;
+  margin-left: 7px;
+}

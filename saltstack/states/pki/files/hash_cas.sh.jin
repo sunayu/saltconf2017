@@ -1,0 +1,11 @@
+#! /bin/bash
+
+CACERTS_DIR='{{ cacerts_dir }}'
+
+rm -rf $CACERTS_DIR/*.0
+
+for CERT in `ls ${CACERTS_DIR}`; do
+  if [[ $CERT =~ \.pem|\.crt ]]; then
+    ln -s $CACERTS_DIR/$CERT $CACERTS_DIR/`openssl x509 -in $CACERTS_DIR/$CERT -noout -hash`.0
+  fi
+done

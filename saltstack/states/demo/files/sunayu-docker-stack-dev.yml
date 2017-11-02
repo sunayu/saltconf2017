@@ -1,0 +1,16 @@
+version: '3'
+services:
+  flappy:
+    image: sm:5000/flappy:1.2
+    ports:
+      - "4567:4567"
+    networks:
+      - sunayu
+  whaledemo:
+    image: sm:5000/whaledemodev:1.3
+    ports:
+      - "3000:3000"
+    networks:
+      - sunayu
+networks:
+  sunayu:

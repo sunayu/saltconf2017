@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
+docker:
+  pkg: docker-ce
+  service: docker
+  registries:
+  - host: c73
+    port: 80
+  swarm_drain_managers: false
+  nic: eth0
